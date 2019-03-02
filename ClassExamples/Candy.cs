@@ -13,7 +13,7 @@ namespace ClassExamples
 
         // Properties
         public string Flavor { get; }
-        public int Rating { get; private set; }
+        public int Rating { get; private set; } = 1; //initialize property at 1
         public string Review { get; private set; }
         public string Name { get; }
         public CandyType Type { get; }
@@ -48,6 +48,8 @@ namespace ClassExamples
             SetRating(userRating);
             Review = review;
         }
+
+    //    public void setRating(bool likedIt) => Rating = likedIt ? 10 : 1;
         public override string ToString()
         {
             return $"This is {Type} {Name}, with a(n) {Flavor}, rated{Rating} with review of {Review}";
