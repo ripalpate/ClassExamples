@@ -1,4 +1,7 @@
-﻿using System;
+﻿using ClassExamples.Legos;
+using ClassExamples.Legos.Heads;
+using ClassExamples.Legos.Torsos;
+using System;
 
 namespace ClassExamples
 {
@@ -26,7 +29,18 @@ namespace ClassExamples
             taffy.SetRating(10);
             taffy.SetRating(5, "don't like it.");
             Console.WriteLine(taffy);
-            Console.WriteLine("Hello World");
+
+            var myDogHead = new Dog();
+            var martinHead = new Bald();
+            var astronaught = new Astronaut();
+
+            var fitTorso = new FitTorso(2, Sex.Male, Legos.Colors.Freckles);
+            fitTorso.Crunch(12);
+
+
+            var minifigure = new MiniFigure(martinHead, fitTorso);
+            minifigure.Greet();
+            Console.ReadLine();
         }
     }
 }

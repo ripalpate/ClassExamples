@@ -49,7 +49,7 @@ namespace ClassExamples
             Review = review;
         }
 
-    //    public void setRating(bool likedIt) => Rating = likedIt ? 10 : 1;
+        //    public void setRating(bool likedIt) => Rating = likedIt ? 10 : 1;
         public override string ToString()
         {
             return $"This is {Type} {Name}, with a(n) {Flavor}, rated{Rating} with review of {Review}";
