@@ -10,13 +10,18 @@ namespace ClassExamples.Legos
     {
         public Head Head { get; set; }
         public Torso Body { get; set; }
-        //Legs
+        public Legs.Legs Legs { get; set; } //because namespace and type are same so have to use it with namespace.type
+        public string Name { get; set; }
+        
 
-        public MiniFigure(Head head, Torso body)
+        public MiniFigure(string name, Head head, Torso body, Legs.Legs legs)
         {
+            Name = name;
             Head = head;
             Body = body;
+            Legs = legs;
         }
+
         //public void Eat()
         //{
         //    Head.Chew();
@@ -26,6 +31,7 @@ namespace ClassExamples.Legos
         {
             Body.Wave();
             Head.Talk();
+            Legs.Jump();
         }
     }
 }

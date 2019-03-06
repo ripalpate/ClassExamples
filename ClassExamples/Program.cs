@@ -1,5 +1,6 @@
 ﻿using ClassExamples.Legos;
 using ClassExamples.Legos.Heads;
+using ClassExamples.Legos.Legs;
 using ClassExamples.Legos.Torsos;
 using System;
 
@@ -37,9 +38,11 @@ namespace ClassExamples
             var fitTorso = new FitTorso(2, Sex.Male, Legos.Colors.Freckles);
             fitTorso.Crunch(12);
 
-
-            var minifigure = new MiniFigure(martinHead, fitTorso);
+            var scalyTorso = new ScalyTorso();
+            var adamsLegs = new OrangeLegs(Length.Short);
+            var minifigure = new MiniFigure("Adam", astronaught, scalyTorso, adamsLegs);
             minifigure.Greet();
+           
             Console.ReadLine();
         }
     }

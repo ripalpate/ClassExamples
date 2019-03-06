@@ -12,7 +12,8 @@ namespace ClassExamples.Legos
             Red,
             Freckles,
             Tan,
-            Bone
+            Bone,
+            Orange
         }
 
 }
